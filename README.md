@@ -1,2 +1,4 @@
-# CS310
- Coursework for CS310
+# CS 310 C++
+## Contributors
+* Richard Krasso
+* Cristian Taylor
