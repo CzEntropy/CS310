@@ -1,0 +1,38 @@
+// Ch02Exercise13_1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Variables to store user input
+    double originalPrice, markupPercentage, salesTaxRate;
+
+    // Get input from user
+    cout << "Enter the original price of the item: ";
+    cin >> originalPrice;
+
+    cout << "Enter the percentage of the marked-up price: ";
+    cin >> markupPercentage;
+
+    cout << "Enter the sales tax rate: ";
+    cin >> salesTaxRate;
+
+    // Calculate selling price
+    double markupAmount = (originalPrice * markupPercentage) / 100;
+    double sellingPrice = originalPrice + markupAmount;
+
+    // Calculate sales tax
+    double salesTax = (sellingPrice * salesTaxRate) / 100;
+
+    // Calculate final price
+    double finalPrice = sellingPrice + salesTax;
+
+    // Output the results
+    cout << "\nOriginal Price: $" << originalPrice << endl;
+    cout << "Markup Percentage: " << markupPercentage << "%" << endl;
+    cout << "Store's Selling Price: $" << sellingPrice << endl;
+    cout << "Sales Tax Rate: " << salesTaxRate << "%" << endl;
+    cout << "Sales Tax: $" << salesTax << endl;
+    cout << "Final Price: $" << finalPrice << endl;
+
+    return 0;
+}
