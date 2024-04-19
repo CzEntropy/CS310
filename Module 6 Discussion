@@ -1,0 +1,33 @@
+#include <iostream>
+
+enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+
+int main() {
+    Day today = Monday;
+    
+    switch (today) {
+        case Monday:
+            std::cout << "Today is Monday." << std::endl;
+            break;
+        case Tuesday:
+            std::cout << "Today is Tuesday." << std::endl;
+            break;
+        case Wednesday:
+            std::cout << "Today is Wednesday." << std::endl;
+            break;
+        case Thursday:
+            std::cout << "Today is Thursday." << std::endl;
+            break;
+        case Friday:
+            std::cout << "Today is Friday." << std::endl;
+            break;
+        case Saturday:
+            std::cout << "Today is Saturday." << std::endl;
+            break;
+        case Sunday:
+            std::cout << "Today is Sunday." << std::endl;
+            break;
+    }
+    
+    return 0;
+}
