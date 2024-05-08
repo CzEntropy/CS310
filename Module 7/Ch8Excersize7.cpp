@@ -1,3 +1,6 @@
+//Cristian Taylor
+//5-5-2024
+//This program will store candidates and their vote count within an array
 #include <iostream>
 #include <vector>
 #include <string>
@@ -44,14 +47,15 @@ int main() {
         }
     }
 
-    // Output results
+    // Output results with proper format.
     cout << "\nResults:\n";
+    cout << setw(15) << left << "Candidate" << setw(15) << left << "Votes Received" << setw(15) << left << "% of Total Votes" << endl;
     for (const auto& candidate : candidates) {
-        cout << candidate.lastName << ": " << candidate.votes << " votes, "
-             << fixed << setprecision(2) << candidate.percentage << "% of total votes\n";
+        cout << setw(15) << left << candidate.lastName << setw(15) << left << candidate.votes << setw(15) << left << fixed << setprecision(2) << candidate.percentage << endl;
     }
 
     cout << "\nThe winner of the election is: " << winner << endl;
-
+   
+    getch();
     return 0;
 }
