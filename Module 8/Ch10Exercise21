@@ -1,6 +1,6 @@
 //Cristian Taylor
 //5-6-2024
-//
+// This program creates and defines a bankAccount class
 #include <iostream>
 #include <string>
 
@@ -65,7 +65,7 @@ int main() {
 
     // Example usage
     accounts[0].setAccountHolderName("John Doe");
-    accounts[0].setAccountType("checking");
+    accounts[0].setAccountType("Checking");
     accounts[0].setBalance(1000.0);
     accounts[0].setInterestRate(0.05);
 
@@ -73,7 +73,7 @@ int main() {
     accounts[0].withdraw(200.0);
 
     accounts[0].display();
-    
+
     getch();
     return 0;
 }
