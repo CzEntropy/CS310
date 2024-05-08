@@ -18,10 +18,6 @@ int main() {
     // Input candidate names and votes
     for (int i = 0; i < 5; ++i) {
         cout << "Enter candidate's last name: ";
-
-
-
-            
         cin >> candidates[i].lastName;
         cout << "Enter number of votes received by " << candidates[i].lastName << ": ";
         cin >> candidates[i].votes;
@@ -38,12 +34,24 @@ int main() {
         candidate.percentage = (static_cast<float>(candidate.votes) / totalVotes) * 100;
     }
 
+    // Find the winner
+    int maxVotes = 0;
+    string winner;
+    for (const auto& candidate : candidates) {
+        if (candidate.votes > maxVotes) {
+            maxVotes = candidate.votes;
+            winner = candidate.lastName;
+        }
+    }
+
     // Output results
     cout << "\nResults:\n";
     for (const auto& candidate : candidates) {
         cout << candidate.lastName << ": " << candidate.votes << " votes, "
              << fixed << setprecision(2) << candidate.percentage << "% of total votes\n";
     }
+
+    cout << "\nThe winner of the election is: " << winner << endl;
 
     return 0;
 }
