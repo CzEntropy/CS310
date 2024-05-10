@@ -1,3 +1,7 @@
+//Cristian Taylor
+//5/10/2024
+//Shapes Parent class + two subclasses
+
 #include <iostream>
 
 
