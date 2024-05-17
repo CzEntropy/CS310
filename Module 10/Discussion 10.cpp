@@ -1,3 +1,6 @@
+//Cristian Taylor
+//5-16/2024
+//This is a program that attempts to create a pointer and 
 #include <iostream>
 
 int main() {
