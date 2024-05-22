@@ -2,6 +2,7 @@
 //5-16/2024
 //This is a program that attempts to create a pointer and 
 #include <iostream>
+#include <conio.h> 
 
 int main() {
     int x = 10;
@@ -11,6 +12,8 @@ int main() {
     
     std::cout << "Value of x: " << x << std::endl;
     std::cout << "Value pointed to by ptr: " << *ptr << std::endl; // This will also cause an issue
-
+    
+    getch();
     return 0;
+   
 }

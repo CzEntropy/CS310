@@ -1,6 +1,6 @@
 // Cristian Taylor
 // 5-17-2024
-// This program will store candidates and their vote count within a dynamic array
+// This program will store candidates and their vote count within a dynamic array simlar to Ch8Exercise7
 #include <iostream>
 #include <string>
 #include <iomanip> // for setw and setprecision
