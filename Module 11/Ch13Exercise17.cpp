@@ -4,6 +4,7 @@
 #include <iostream>
 #include <random>
 #include <vector>
+#include <conio.h>
 
 int main() {
     // Create a random device to seed the random number generator
@@ -24,6 +25,6 @@ int main() {
     for (const auto& num : random_numbers) {
         std::cout << num << "\n";
     }
-
+    getch();
     return 0;
 }
