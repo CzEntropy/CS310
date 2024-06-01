@@ -8,22 +8,23 @@
 #include <sstream>
 #include <conio.h>
 
+//Negative number error message
 class negativeNumber : public std::runtime_error {
 public:
     negativeNumber() : std::runtime_error("Negative number entered.") {}
 };
-
+//Nonnumber error message
 class nonNumber : public std::runtime_error {
 public:
     nonNumber() : std::runtime_error("Non-digit character entered.") {}
 };
-
+// Feet/Inch to Cenimeter converter.
 double convertToCentimeters(double feet, double inches) {
     const double feetToCm = 30.48;
     const double inchToCm = 2.54;
     return (feet * feetToCm) + (inches * inchToCm);
 }
-
+// Input validation. Throws nonnumber error if invalid, negative, or decimal
 void validateInput(const std::string& input) {
     for (char ch : input) {
         if (!isdigit(ch) && ch != '.' && ch != '-') {
